@@ -38,4 +38,33 @@ for x in range(3):
     t.forward(200)
     t.left(120)
 t.end_fill()
+
+
+# pyramid lines 
+t.penup()
+t.goto(-160,-40)
+t.pendown()
+t.forward(122)
+
+t.penup()
+t.goto(-140,5)
+t.pendown()
+t.forward(80)
+
+t.penup()
+t.goto(-180,-75)
+t.pendown()
+t.forward(165)
+
+#sand dune
+t.penup()
+t.goto(200,-100)
+t.pendown()
+t.setheading(90)
+t.color("#FAD5A5")
+t.begin_fill()
+t.circle(50,180)
+t.end_fill()
 t.mainloop()
+
+
