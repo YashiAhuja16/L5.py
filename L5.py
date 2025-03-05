@@ -56,6 +56,28 @@ t.goto(-180,-75)
 t.pendown()
 t.forward(165)
 
+
+# cactus
+t.penup()
+t.goto(165,-50)
+t.pendown()
+t.setheading (90)
+t.color("#126109")
+t.begin_fill()
+t.forward(50)
+t.setheading(0)
+t.circle(20,180)
+t.setheading(90)
+t.forward(20)
+t.circle(25,180)
+t.forward(50)
+t.setheading(180)
+t.circle(20,180)
+t.setheading(270)
+t.forward(30)
+t.end_fill()
+
+
 #sand dune
 t.penup()
 t.goto(200,-100)
@@ -65,6 +87,17 @@ t.color("#FAD5A5")
 t.begin_fill()
 t.circle(50,180)
 t.end_fill()
+
+#sun
+t.penup()
+t.goto(200,250)
+t.pendown()
+t.color("#edf065")
+for x in range (20):
+    t.forward(70)
+    t.right(150)
+
 t.mainloop()
+
 
 
